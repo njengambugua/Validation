@@ -1,0 +1,88 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  color: white;
+  background: linear-gradient(to right, rgb(164, 102, 199), rgb(21, 187, 151));
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  border: solid 2px #fff;
+  width: 75%;
+  align-items: center;
+  height: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+}
+#fname,#email,#uname,#psw,#cpsw{
+  border-radius: 20px;
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  border: 3px solid black;
+}
+.btn{
+  background-color: rgb(12, 86, 155);
+  transition: transform 0.3s ease;
+  border-radius: 25px;
+  width: 75px;
+  padding: 15px 10px;
+  border: 1px solid rgb(60, 66, 155);
+}
+.btn:hover{
+  transform: scale(1.5);
+  background-color: rgb(165, 113, 36);
+  cursor: pointer;
+}
+label{
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.material-icons{
+  display: flex;
+  position: absolute;
+  color: black;
+  right: 0;
+  cursor: pointer;
+}
+.err_msg{
+  color: red;
+}
+#p{
+  height: 24px;
+  width: 40px;
+  display: flex;
+  position: absolute;
+  color: black;
+  right: 10px;
+  cursor: pointer;
+  pointer-events: visibleStroke;
+}
+#r{
+  height: 24px;
+  width: 40px;
+  display: flex;
+  position: absolute;
+  color: black;
+  right: 10px;
+  cursor: pointer;
+  pointer-events: visible;
+}
